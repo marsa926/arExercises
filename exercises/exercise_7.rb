@@ -10,3 +10,15 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@store_new = Store.create(name: "ajlfjsalfjlasjlkelklew",
+                          annual_revenue: -20,
+                          mens_apparel: false,
+                          womens_apparel: false)
+
+puts @store_new.errors.messages
+
+@newbie = Employee.create(first_name: "Sponge",
+                          last_name: "",
+                          hourly_rate: 10)
+puts @newbie.errors.messages
